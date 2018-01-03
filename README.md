@@ -1,0 +1,1 @@
+# ratingcoin.github.io
