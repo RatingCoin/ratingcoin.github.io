@@ -1,4 +1,51 @@
----
-layout: home
-author_profile: true
----
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <div class="container main">
+        <div class="row">
+            <div class="column" style="text-align: center;">
+                <h3>There are <span id="tbc">N</span> bitcoins circulating.</h3>
+                <h2>Buy here your bitcoins before it's too late!</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column column-20"></div>
+            <div class="column column-60">
+                <iframe src="https://changelly.com/widget/v1?auth=email&from=EUR&to=BTC&merchant_id=181e89667c75&address=&amount=100&ref_id=181e89667c75&color=00cf70"
+                    width="100%" height="360" class="changelly" scrolling="no" style="overflow-y: hidden; border: none"> Can't load widget
+                </iframe>
+            </div>
+            <div class="column column-20"></div>
+        </div>
+    </div>
+
+<!-- <script src="js/scripts.js"></script> -->
+    <!-- <script>
+        (function() {
+            const url = "https://blockchain.info/q/totalbc";
+            fetch(url)
+            .then(response => response.json())
+            .then(function(data) {
+                btc = (data / 100000000).toLocaleString();
+                document.getElementById("tbc").innerText = btc;
+            });
+        })();
+    </script> -->
+</body>
+</html>
